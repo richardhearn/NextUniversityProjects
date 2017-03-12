@@ -1,0 +1,264 @@
+/*letra de la pagina*/
+body h1, body h2, a{
+	font-family: 'Dancing Script', cursive;
+}
+
+/*fondo y borde de la cabecera*/
+header{
+	background-color:  #5b7989;
+	border-radius: 10px;
+}
+
+/*color de los links de navegacion, separarlos*/
+.nav-bar a{
+	color: white;
+	padding: 0 2%;
+}
+
+
+/*transicion al pasar el cursor encima de los links*/
+.nav-bar > a{
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.nav-bar > a:hover{
+	text-decoration: none;
+	color: white;
+	transform: scale(1.1);
+}
+
+/*----fin de la transicion----*/
+
+
+/*transicion de imagenes secundarias*/
+#img1, #img2{
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+}
+
+#img1:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+
+#img2:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+/*----fin de la transicion----*/
+
+
+/*estilos del div de imagen central*/
+.div-imagen-central{
+	width: 100%;
+	text-align: center;
+	background-color: #82c3a6;	
+}
+
+
+/*para dispositivos con resolucion desktop*/
+@media (min-width: 900px){
+
+	/*estilos del titulo*/
+	.titulo{
+		text-align: left;
+		color: white;
+		text-shadow: 2px 2px #02010a;
+	}
+
+	/*links de categoria uno alado de otro*/
+	.links{
+		display: flex;
+	}
+
+	/*para separar los links de la pagina del titulo*/
+	#index-link{
+		margin-left: 70%;
+	}
+
+	/*mostrar los links de categorias uno a lado de otro*/
+	.nav-bar{
+		display: flex;
+		height: 100%;
+	}
+
+	/*estilo de la imagen central*/
+	.div-imagen-central img{
+		margin: 4%;
+		width: 60%;
+		height: 55vh;
+		box-shadow: 2px 2px 2px 2px #02010a;
+	}
+
+	/*estilo del div con las imagenes secundarias*/
+	.div-imagen-secundaria{
+		width: 100%;
+		height: auto;
+		background-color: #d5c75f;
+		border: 1px solid;
+		display: flex;
+	}
+
+	/*estilo de las imagenes secundarias*/
+	.div-imagen-secundaria > div > img{
+		width: 65%;
+		height: 45vh;
+		box-shadow: 2px 2px 2px 2px #02010a;
+	}
+
+	/*cada columna del div secundario tomara el 50% del div*/
+	.div-imagen-secundaria .columna1, .div-imagen-secundaria .columna2{
+		text-align: center;
+		margin-top: 3%;
+		margin-bottom: 3%;
+		width: 50%;
+	}
+
+	/*para desktop tendra maximo 900px de ancho y estara centrado*/
+	.contenido{
+		text-align: center !important;
+		max-width: 900px;	
+		margin: auto;
+	}
+
+	/*dandole estilo al footer y acomodando el contenido*/
+	.footer{
+		display: flex;
+		text-align: center;
+		font-family: 'Dancing Script', cursive;
+		font-size: 1.2vw;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		margin-bottom: 1%;
+		width: 100%;
+		background-color: #C6d5c5;
+		height: 100%;
+	}
+
+	/*cada columna del footer ocupara 25	%*/
+	.footer .columna1, .columna2, .columna3, .columna4{
+		width: 25%;
+		margin-left: 2%;
+	}
+
+	.social-icon{
+		float: left;
+	}
+
+	.social-icon img{
+		width: 20px;
+	}
+
+}
+/*----------------------------------------------*/
+
+/* visualizacion de la pagina para dispositivos 
+con resolucion menor a 900px*/
+@media (max-width: 899px){
+	
+	/*alinear titulo*/
+	.titulo{
+		color: white;
+		text-shadow: 2px 2px #02010a;
+	}
+
+	/*links de categoria uno alado de otro*/
+	.links > a{
+		width: 30%;
+	}	
+
+	/*mostrar las categorias una alado de otra*/
+	.links{
+		display: flex;
+	}
+
+	/*div de imagen centra*/
+	.div-imagen-central{
+		width: 100%;
+	}
+
+	/*imagen del div de imagen central*/
+	.div-imagen-central img{
+		margin: 4%;
+		width: 80%;
+		height: 30vh;
+		box-shadow: 2px 2px 2px 2px #02010a;
+	}
+
+	/*div de imagen secundaria*/
+	.div-imagen-secundaria{
+		width: 100%;
+		height: auto;
+		background-color: #d5c75f;
+		border: 1px solid;
+		display: block;
+	}
+
+	/*imagen de div secundaria*/
+	.div-imagen-secundaria > div > img{
+		width: 70%;
+		height: 30vh;
+		box-shadow: 2px 2px 2px 2px #02010a;
+	}
+
+	/*columnas de div secundario*/
+	.div-imagen-secundaria .columna1, .div-imagen-secundaria .columna2{
+		text-align: center;
+		margin-top: 3%;
+		margin-bottom: 3%;
+		width: 100%;
+	}
+
+	/*100% de pantalla*/
+	.contenido{
+		text-align: center !important;
+		background-color: #82c3a6;
+		max-width: 100%;
+		margin: auto;
+	}
+
+	.footer{
+		padding-top: 3%;
+		text-align: left; 
+		font-family: 'Dancing Script', cursive;
+		width: 100%;
+		font-size: 5vw;
+		background-color: #C6d5c5;
+	}
+
+	.footer .columna2, .footer .columna3,
+	.footer .columna4{
+		margin-top: 7%;
+	}
+	
+	.footer .columna1 h2, .columna2 h2, .columna3 h2, .columna4 h2{
+		font-size: 9vw;
+	}
+
+	.social-icon img{
+		width: 40px;
+	}
+
+	@-webkit-keyframes slide-in{
+	0%{
+		margin-top: 150%;
+	}
+
+	60%{
+		margin-top: -5%;
+	}
+
+	100%{
+		margin-top: 0%;
+	}
+
+	}
+
+	header{
+		animation: slide-in 2s;
+	}
+	
+}
