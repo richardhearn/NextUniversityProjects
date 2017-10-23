@@ -1,0 +1,35 @@
+.navigation a {
+    margin: 2px;
+    font-size: 60%;
+}
+
+.logo-div p {
+    font-family: 'Indie Flower', cursive; 
+    font-size: 100%;
+}
+
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media (min-width: 981px){
+    .logo-div p {
+        font-size: 150% !important;
+    }
+}
+
+@media (min-width: 798px){
+    .logo-div p {
+        font-size: 120% !important;
+    }
+}
+
+.social-div .waves-effect{
+    margin-top: 40px;
+}
+
+@media (max-width: 600px){
+    .entrada img {
+        width: 70%;
+    }
+}
