@@ -1,0 +1,70 @@
+<div class="div-principal center-align">
+  <form class="row ">
+    <h3>Inicia Sesion</h3>
+    <div class="input-field col l12 m12 s12">
+      <input id="email" type="email" class="validate" required="true" aria-required="true">
+      <label for="email" data-error="wrong" data-success="right">Email</label>
+    </div>
+
+    <div class="input-field col l12 m12 s12">
+      <input id="password" type="password" class="validate" required="true" aria-required="true">
+      <label for="password" data-error="wrong" data-success="right">Password</label>
+    </div>
+
+    <div class="col l12 m12 s12">
+      <a class="waves-effect waves-light btn iniciar" onclick="{$.getJSON( 'usuarios.json', function(data) {console.log(data)})}">Iniciar</a>
+    </div>
+  </form>
+
+</div>
+
+<div class="col l12 m12 s12 div-main">
+            
+          <nav clas="col l12 m12">
+            <div class="nav-wrapper card" >
+                <a href="#" class="brand-logo">La Bodega</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href=""><i class="large material-icons p1">apps</i></a></li>
+                  <li><a href=""><i class="large material-icons p2">child_friendly</i></a></li>
+                  <li><a href=""><i class="large material-icons p3">event_note</i></a></li>
+                  <li><a href=""><i class="large material-icons p4">exit_to_app</i></a></li>
+                </ul>
+            </div>
+          </nav>
+             
+              <div class="row l12 m12 s12 card div-top">
+                <div class="row">
+                <div class="col l5 m5">
+                  <h5>Catalogo de Productos</h5>
+                </div>
+                <div class="row right l5 m5">
+                  <div class="col l12 m12">
+                    <h6>¿Que estas buscando?</h6>
+                  </div>
+                  <div class="col l12 m12">
+                    <div class="input-field col l12 m12 s12">
+                        <input id="busqueda" type="text" class="validate">
+                        <label for="busqueda">Buscar producto</label>
+                      </div>
+                  </div>
+                </div>
+                </div>
+
+              </div>
+
+              <div class="col row l12 m12 s12 card carrito">
+                <div class="col left col l7 m7">
+                  <h5>Carrito de Compras</h5>
+                </div>
+                <div class="col row col l6 m6 mostrarProductos">
+                  
+                </div>
+                <div class="col col l6 m6 mostrarTotal">
+                  <p id='total'></p>
+                  <a class="waves-effect #43a047 green darken-1 btn pagar" >Pagar</a>
+                  <a class="waves-effect #d84315 deep-orange darken-3 btn cancelar" >Cancelar</a>
+                </div>
+
+              </div>
+            
+</div>

@@ -1,0 +1,38 @@
+
+
+form{ 
+	background-color: white !important;
+	position: fixed; /* or absolute */
+  	top: 35%;
+  	left: 38%;
+ }
+
+ .btn {
+ 	margin-bottom: 30px;
+ }
+
+ .div-principal{
+ 	width: 100%;
+ }
+
+ .nav-wrapper a, .div-top{
+ 	color: #006064;
+ }
+
+ .producto .responsive-img{
+ 	height: 170px !important;
+ 	margin:2px;
+ }
+
+.carrito{
+	display: none;
+}
+
+.mostrarProductos .responsive-img{
+ 	height: 80px !important;
+ 	margin:2px;
+ }
+
+ .div-main {
+ 	display: none;
+ }

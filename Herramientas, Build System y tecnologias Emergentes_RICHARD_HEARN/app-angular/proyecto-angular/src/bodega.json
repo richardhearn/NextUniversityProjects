@@ -1,0 +1,68 @@
+[
+	{
+		"nombre": "aguacate",
+		"precio": 3,
+		"disponible": 46,
+		"ruta": "img/aguacate.jpg"
+	},
+	{
+		"nombre": "ajo",
+		"precio": 2,
+		"disponible": 49,
+		"ruta": "img/ajo.jpg"
+	},
+	{
+		"nombre": "almendras",
+		"precio": 3.55,
+		"disponible": 40,
+		"ruta": "img/almendras.jpg"	
+	},
+	{
+		"nombre": "arandanos",
+		"precio": 1.99,
+		"disponible": 150,
+		"ruta": "img/arandanos.jpg"
+	},
+	{
+		"nombre": "calabaza",
+		"precio": 7.25,
+		"disponible": 76,
+		"ruta": "img/calabaza.jpg"
+	},
+	{
+		"nombre": "canela",
+		"precio": 4.25,
+		"disponible": 36,
+		"ruta": "img/canela.jpg"
+	},
+	{
+		"nombre": "cebolla",
+		"precio": 4.65,
+		"disponible": 44,
+		"ruta": "img/cebolla.jpg"
+	},
+	{
+		"nombre": "fresa",
+		"precio": 3.65,
+		"disponible": 72,
+		"ruta": "img/fresa.jpg"
+	},
+	{
+		"nombre": "kiwi",
+		"precio": 6.55,
+		"disponible": 88,
+		"ruta": "img/kiwi.jpg"
+	},
+	{
+		"nombre": "limon",
+		"precio": 3.45,
+		"disponible": 70,
+		"ruta": "img/limon.jpg"
+	},
+	{
+		"nombre": "lychee",
+		"precio": 6.85,
+		"disponible": 56,
+		"ruta": "img/lychee.jpg"
+	}
+]

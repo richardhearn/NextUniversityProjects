@@ -1,0 +1,32 @@
+[
+	{
+		"name": "mario@gmail.com",
+		"pass": "123",
+		"nombre": "Mario"
+	},
+	{
+		"name": "juan@gmail.com",
+		"pass": "1234",
+		"nombre": "Juan"
+	},
+	{
+		"name": "jose@gmail.com",
+		"pass": "1234",
+		"nombre": "Jose"
+	},
+	{
+		"name": "cristina@gmail.com",
+		"pass": "123321",
+		"nombre": "Cristina"
+	},
+	{
+		"name": "ana@gmail.com",
+		"pass": "ana123",
+		"nombre": "Ana"
+	},
+	{
+		"name": "jessica@gmail.com",
+		"pass": "jessi",
+		"nombre": "Jessica"
+	}
+]

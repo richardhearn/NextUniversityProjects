@@ -1,0 +1,65 @@
+ng g component nombre
+ng g pipe nombre
+
+axios.get('usuarios.json')
+              .then(response => {
+              console.log(response.data)
+                  for(var i = 0; i <response.data.length; i++ ){
+
+                    if(response.data[i].name == username && response.data[i].pass == passw){
+                      
+                      var bienvenido = "si";
+                      var usuario = response.data[i].nombre
+                    }else {
+                      
+                    }
+
+                  }
+                  if(bienvenido == "si"){
+
+                    console.log("Bienvenido "+usuario)
+                  }else {
+                    console.log("correo o contraseña invalido")
+                  }
+              }).catch(error => {
+    console.log(error)
+});
+
+
+
+let self=this;
+
+    $('.iniciar').click(function(){
+    	var username = $('#email').val();
+        var passw = $('#password').val();
+    	
+        axios({
+  			method:'get',
+  			url:'../usuarios.json'
+		})
+		  	.then(function(response) {
+		  	console.log(response)
+		}).catch(error => {
+    		console.log(error)
+		});
+
+    })
+
+    
+	}
+
+
+
+
+
+
+	var username = $('#email').val();
+	        var passw = $('#password').val();
+	    	
+	        axios.get('usuarios.json')
+			  .then(function (response) {
+			    console.log(response);
+			  })
+			  .catch(function (error) {
+			    console.log(error);
+			  });
